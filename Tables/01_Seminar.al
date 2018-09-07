@@ -74,10 +74,10 @@ table 123456701 "CSD Seminar"
             begin
                 if(xRec."Gen. Prod. Posting Group" <>
                 "Gen. Prod. Posting Group") then begin
-                    if GenProdPostingGroup.ValidateVatBusPostingGroup
+                    if GenProdPostingGroup.ValidateVatProdPostingGroup
                     (GenProdPostingGroup, "Gen. Prod. Posting Group") then
                         Validate("VAT Prod. Posting Group",
-                     GenProdPostingGroup."Def. VAT Bus. Posting Group");
+                     GenProdPostingGroup."Def. VAT Prod. Posting Group");
                 end;
             end;
         }
@@ -114,7 +114,7 @@ table 123456701 "CSD Seminar"
 
         Seminar: Record "CSD Seminar";
 
-        GenProdPostingGroup: Record "Gen. Business Posting Group";
+        GenProdPostingGroup: Record "Gen. Product Posting Group";
 
         NoSeriesMgt: Codeunit NoSeriesManagement;
 
