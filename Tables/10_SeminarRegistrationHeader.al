@@ -353,6 +353,11 @@ Caption = 'Starting Date';
         "Document Date" := WORKDATE;
         SeminarSetup.GET;
         NoSeriesMgt.SetDefaultSeries("Posting No. Series",SeminarSetup."Posted Seminar Reg. Nos.");
+        // >> Lab 8 1-1 
+        if GetFilter("Seminar No.") <>'' then
+         if GetRangeMin("Seminar No.") = GetRangeMax("Seminar No.") 
+         then Validate("Seminar No.",GetRangeMin("Seminar No.")); 
+         // << Lab 8 1-1
     end;
 
 local procedure InitRecord();

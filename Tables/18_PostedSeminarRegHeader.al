@@ -2,6 +2,11 @@ table 123456718  "CSD Posted Seminar Reg. Header"
 {
 // CSD1.00 - 2018-01-01 - D. E. Veloper
 // Chapter 7 - Lab 3-1
+// Chapter 8 - Lab 2 - 3
+// Added LookupPageID & DrilldownPageId properties
+// Chapter 8 - Lab 2 - 4
+// Added Acttion Navigate
+
     Caption = 'Posted Seminar Reg. Header';
     LookUpPageID= "CSD Posted Seminar Reg. List";
     DrillDownPageID= "CSD Posted Seminar Reg. List";
