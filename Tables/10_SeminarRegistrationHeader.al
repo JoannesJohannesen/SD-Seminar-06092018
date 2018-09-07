@@ -1,7 +1,7 @@
 table 123456710 "CSD Seminar Reg. Header"
 {
     // CSD1.00 - 2018-01-01 - D. E. Veloper
-    //   Chapter 6 - Lab 1-3 & Lab 1-4
+    //   Chapter 6 - Lab 1
     //     - Created new table
 
 Caption = 'Seminar Registration Header';
@@ -355,6 +355,10 @@ Caption = 'Starting Date';
         NoSeriesMgt.SetDefaultSeries("Posting No. Series",SeminarSetup."Posted Seminar Reg. Nos.");
     end;
 
+local procedure InitRecord();
+begin
+    
+end;
     procedure AssistEdit(OldSeminarRegHeader : Record "CSD Seminar Reg. Header") : Boolean;
     begin
         with SeminarRegHeader do begin
